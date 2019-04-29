@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_marginTop="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/cursive"
+        android:text="DBMS Project"
+        android:textColor="@android:color/white"
+        android:textSize="44sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="76dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_icon" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="    E-mail address"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:textSize="20sp"
+        android:layout_below="@id/app_icon"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="    Password"
+        android:paddingTop="8dp"
+        android:inputType="textPassword"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:textSize="20sp"
+        android:layout_below="@id/login_email"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/cherry_gradient"
+        android:layout_below="@id/login_password"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="48dp"
+        android:text="LOGIN"
+        android:textSize="22sp"
+        android:paddingTop="4dp"
+        android:clickable="true"
+        android:paddingBottom="4dp"
+        android:focusable="true" />
+
+    <TextView
+        android:onClick="goToRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:text="No account yet? Create one right away!"
+        android:focusable="true" />
+
+</RelativeLayout>

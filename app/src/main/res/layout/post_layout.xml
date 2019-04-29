@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edittext_background"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/create_post_profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/user_2"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/create_post_profile_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/create_post_profile_image"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:text="User's Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignStart="@id/name"
+        android:text="Time of post"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/time"
+        android:layout_alignBottom="@id/time"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/time"
+        android:src="@drawable/ic_public" />
+
+    <ImageView
+        android:id="@+id/delete_post"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignTop="@id/create_post_profile_image"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/update_post"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignTop="@id/create_post_profile_image"
+        android:layout_toLeftOf="@id/delete_post"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/ic_edit" />
+
+    <TextView
+        android:id="@+id/post_text"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_post_profile_image"
+        android:layout_marginTop="16dp"
+        android:text="Text describing the user's ordeal/ motivational positivity post. Sample text sample text sample text sample text sample text sample text sample text sample text."
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/post_text"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/heart_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_heart_fill" />
+
+        <TextView
+            android:id="@+id/heart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/heart"
+            android:text="53"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/heart_group"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_comment" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/comment"
+            android:text="10"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/heart_group"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp">
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/share"
+            android:text="6"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

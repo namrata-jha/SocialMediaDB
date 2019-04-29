@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@id/search_edittext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_search" />
+
+    <EditText
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attach_post_image"
+        android:layout_margin="16dp"
+        android:layout_toLeftOf="@id/search_button"
+        android:background="@drawable/post_text_edit"
+        android:gravity="top"
+        android:hint="Enter name to search"
+        android:padding="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/found_profile_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_edittext"/>
+
+</RelativeLayout>

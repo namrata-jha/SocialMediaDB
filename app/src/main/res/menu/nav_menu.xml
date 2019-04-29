@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_feed"
+            android:icon="@drawable/ic_face_syster"
+            android:title="My posts" />
+
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/ic_trending"
+            android:title="Trending posts" />
+
+        <item
+            android:id="@+id/nav_find_friends"
+            android:icon="@drawable/ic_friends"
+            android:title="Find friends" />
+
+        <item
+            android:id="@+id/nav_conversations"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat Rooms" />
+
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>
+

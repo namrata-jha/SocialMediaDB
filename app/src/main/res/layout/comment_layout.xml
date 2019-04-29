@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_list_image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/user_2" />
+
+    <TextView
+        android:id="@+id/comment_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/comment_list_image"
+        android:layout_marginStart="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/comment_list_image"
+        android:text="Namrata Jha"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/comment_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/comment_list_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/comment_list_name"
+        android:textAlignment="viewEnd"
+        android:text="21st Jul 2019 6:08 PM"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/comment_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/comment_list_name"
+        android:layout_below="@id/comment_list_name"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/comment_list_image"
+        android:text="Hello hello hello Hello hello hello Hello hello hello Hello hello hello Hello hello hello Hello hello hello Hello hello hello"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/comment_list_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cherry_gradient" />
+
+
+</RelativeLayout>
