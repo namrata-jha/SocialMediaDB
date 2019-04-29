@@ -1,0 +1,18 @@
+{
+  "name": "user_login_android",
+  "version": "1.0.0",
+  "description": "To make login facility in android using node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Namrata Jha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "uuid": "^3.3.2"
+  }
+}
